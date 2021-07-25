@@ -2,12 +2,26 @@
     text-align: center;
     font-size: 26px;
 }
+.bg{
+    background-image:url(/Kotori.jpg);
+    background-position: top center;
+    background-size: cover;
+    display: block;
+}
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+input {
+    size: 50px;
+}
 
  ul {
     list-style: none;
     /* background-color: #444; */
     /* margin-left: 30%; */
-    font-size: 26px;
+    font-size: 15px;
     /* font-style: italic; */
     padding: 0;
     margin: 0;
@@ -17,24 +31,24 @@
 }
 
 li {
-    line-height: 40px;
+    line-height: 30px;
     display: block;
     border-bottom: 1px solid #888;
     padding-left: 15px;
     /* color: #fff; */
     transition: .3s;
     text-justify: auto;
+    font-size: 15px;
 }
 
 
  li  button {
-    background-color: red;
+    /* background-color: red; */
     display:none;
-    /* width: 20px;
-    height: 20px; */
     font-size: 20px;
-    margin-left: 20px;
-    padding-top: -5px;
+    /* margin-left: 20px;
+    padding-top: -5px; */
+
 
     
     
@@ -42,17 +56,52 @@ li {
 
 ul:hover button  {
     
-    display: inline-block;
+    display: inline;
+    
 }
 
 dt {
     text-decoration: line-through;
-    font-size: 26px;
+    font-size: 15px;
 }
 
 dt button {
     display: none;
 }
 
+.button {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, 0.5),
+      0px 0px 0px 0px rgba(39, 200, 255, 0.5);
+}
+
+
+  .button:hover {
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, 0.5),
+      -10px 10px 25px 0px rgba(39, 200, 255, 0.5);
+  }
+  .button:hover::after {
+    transform: rotate(150deg);
+  }
+  .button::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background-color: #ff3cac;
+    background-image: linear-gradient(
+      225deg,
+      #27d86c 0%,
+      #26caf8 50,
+      #c625d0 100%
+    );
+    z-index: -1;
+    transition: all 0.25s ease;
+  }
+  
 
 
