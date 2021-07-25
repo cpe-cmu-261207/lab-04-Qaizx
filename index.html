@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <title>Lab 04</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+	<link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Tourney|Oswald|Roboto+Condensed|Teko"
+  	/>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src='script.js' defer></script>
-	<title>Lab 04</title>
-	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-</head>
+  <body class="bg flex justify-end flex-col mr-32 my-60">
+    <div class="flex justify-end">
+      <div class="">
+        <h1>Minimal Todo List</h1>
+        <input
+          type="text"
+          onkeypress="keyEnter(event)"
+          class="shadow-lg rounded-xl ring-1 "
+        />
+        <button class="button styleBut" onclick="clickCallback()">Add</button>
 
+        <ul>
+          <!-- <li class="flex justify-between">
+			  AAA
+            <div class="flex justify-end">
+              <button class="mr-3">
+                <img
+                  width="25"
+                  height="25"
+                  src="https://image.flaticon.com/icons/png/512/190/190411.png"
+                  alt="Checked free icon"
+                  title="Checked free icon"
+                  class="loaded"
+                />
+              </button>
+              <button>
+                <img
+                  width="25"
+                  height="25"
+                  src="https://image.flaticon.com/icons/png/512/1828/1828843.png"
+                  alt="Remove free icon"
+                  title="Remove free icon"
+                  class="loaded"
+                />
+              </button>
+            </div>
+          </li> -->
+        </ul>
 
-
-<body class=" bg  flex justify-end flex-col mr-32 my-60">
-	
-	<div class="flex justify-end " >
-		<div class= " ">
-			<h1>Minimal Todo List</h1>
-			<input  type='text' onkeypress="keyEnter(event)" class="shadow-lg rounded-xl ring-1">
-			<button class = "button" onclick="clickCallback()">Add</button>
-			
-			
-			<ul>
-
-			</ul>
-			
-
-
-			<dt>
-				<dl>
-	
-				</dl>
-			</dt>
-		</div>
-		
-	</div>
-	
-
-
-
-	
-
-
-
-
-
-</body>
-
+        <dt>
+          <dl></dl>
+        </dt>
+      </div>
+    </div>
+  </body>
 </html>
