@@ -32,6 +32,7 @@ li {
     transition: .3s;
     text-justify: auto;
     font-size: 15px;
+    color: #fff;
 }
 dt {
   list-style: none;
@@ -52,6 +53,7 @@ dl {
   transition: .3s;
   text-justify: auto;
   font-size: 15px;
+  color: #fff;
 }
 
  li  button {
@@ -68,6 +70,7 @@ li:hover button  {
 
 dt {
     text-decoration: line-through;
+    text-decoration-color: red;
     font-size: 15px;
 }
 
