@@ -2,12 +2,7 @@
     font-family: Tourney;
     
 }
-.bg{
-    background-image:url(/img/Kotori.jpg);
-    background-position: top center;
-    background-size: cover;
-    display: block;
-}
+
 h1 {
     text-align: center;
     font-size: 30px;
