@@ -12,7 +12,6 @@ if(DoneList == null){
 }
 
 function load(){
-    const inputElem = document.querySelector('input')
     const dt = document.querySelector('dt')
     const ul = document.querySelector('ul')
     
@@ -58,7 +57,6 @@ function load(){
 }
 load()
 
-
 const clickCallback = () => {
     const inputElem = document.querySelector('input')
     const dt = document.querySelector('dt')
@@ -92,9 +90,9 @@ const clickCallback = () => {
                 dl.append(li)
                 dt.insertBefore(dl, dt.childNodes[0])
                 // ul.remove(li)
-                console.log(dl.innerText);
+               
                 DoneList.push(dl.innerText)
-                TodoList.splice(TodoList.findIndex(x => (x.innerHTML)-1), 1)
+                TodoList.splice(TodoList.indexOf(dl.innerText), 1);
                 
                 localStorage.setItem('TodoList', JSON.stringify(TodoList));
                 localStorage.setItem('DoneList', JSON.stringify(DoneList));
